@@ -26,10 +26,15 @@ An Overview of the Service
 
 .. image:: lens3-overview.png
 
-This service, Lens3 service does not provide buckets operations, such
-as listing or creating buckets.  A bucket creation is naturally
-prohibited because Lens3 software distributes access requests with
-regard to a bucket accessed.
+This service, Lenticularis-S3 (Lens3), consists of two open-source
+software, Lens3 + MinIO.  MinIO is a popular S3 server.  MinIO
+instances run as user's processes.  Lens3 is a multiplexer for MinIO
+instances and provides a single access point for them.  Lens3 forwards
+file access requests to MinIO with regard to bucket's owner.
+
+Lens3 does not provide buckets operations, such as listing or creating
+buckets.  A bucket creation is naturally prohibited because Lens3
+software distributes access requests with regard to a bucket accessed.
 
 Thus, it is necessary to create buckets, first.  The Web-UI is used to
 create buckets.  In Lens3's terminology, a *pool* refers to a folder
@@ -45,8 +50,8 @@ shared by all users.  Please avoid short commonplace names.
 
 https://github.com/RIKEN-RCCS/lens3/blob/main/v1/doc/user-guide.md
 
-Example of Accessing Buckets by AWS CLI
-=======================================
+Accessing Buckets by AWS CLI
+============================
 
 AWS CLI Installation
 --------------------
