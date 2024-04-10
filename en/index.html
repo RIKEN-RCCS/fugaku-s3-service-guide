@@ -67,10 +67,13 @@ create buckets in it.</p>
 </section>
 <section id="quick-setup-of-buckets">
 <h2>Quick Setup of Buckets<a class="headerlink" href="#quick-setup-of-buckets" title="Link to this heading">¶</a></h2>
+<section id="instructions-in-lens3-repository">
+<h3>Instructions in Lens3 Repository<a class="headerlink" href="#instructions-in-lens3-repository" title="Link to this heading">¶</a></h3>
 <p>The Lens3’s page in github.com has a good guide of the steps to create
 buckets.  Please refer to it.  Bucket names are global, that is,
 shared by all users.  Please avoid short commonplace names.</p>
 <p><a class="reference external" href="https://github.com/RIKEN-RCCS/lens3/blob/main/v1/doc/user-guide.md">https://github.com/RIKEN-RCCS/lens3/blob/main/v1/doc/user-guide.md</a></p>
+</section>
 </section>
 <section id="accessing-buckets-by-aws-cli">
 <h2>Accessing Buckets by AWS CLI<a class="headerlink" href="#accessing-buckets-by-aws-cli" title="Link to this heading">¶</a></h2>
@@ -119,7 +122,25 @@ the ‘-’ minus is <strong>not</strong> a legitimate character in a bucket nam
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="o">--</span><span class="n">endpoint</span><span class="o">-</span><span class="n">url</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">lens3</span><span class="o">.</span><span class="n">fugaku</span><span class="o">.</span><span class="n">r</span><span class="o">-</span><span class="n">ccs</span><span class="o">.</span><span class="n">riken</span><span class="o">.</span><span class="n">jp</span> <span class="n">s3</span> <span class="n">cp</span> <span class="n">s3</span><span class="p">:</span><span class="o">//</span><span class="n">some</span><span class="o">-</span><span class="n">bucket</span><span class="o">-</span><span class="n">name</span><span class="o">/</span><span class="n">sample</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
-<p>Compare the result.</p>
+</section>
+</section>
+<section id="software-components">
+<h2>Software Components<a class="headerlink" href="#software-components" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>MinIO: Popular AWS S3 Server</p>
+<ul>
+<li><p><a class="reference external" href="https://min.io">https://min.io</a></p></li>
+</ul>
+</li>
+<li><p>Lens3: Multiplexer</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/RIKEN-RCCS/lens3">https://github.com/RIKEN-RCCS/lens3</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The service is experimental and is running on a virtual machine
@@ -131,7 +152,6 @@ extensively used.</p>
 service manually and periodically.  The service may not be available
 immediately for newly registered users.</p>
 </div>
-</section>
 </section>
 </section>
 
@@ -147,7 +167,10 @@ immediately for newly registered users.</p>
     <ul>
 <li><a class="reference internal" href="#">Fugaku AWS S3 Service Guide</a><ul>
 <li><a class="reference internal" href="#an-overview-of-the-service">An Overview of the Service</a></li>
-<li><a class="reference internal" href="#quick-setup-of-buckets">Quick Setup of Buckets</a></li>
+<li><a class="reference internal" href="#quick-setup-of-buckets">Quick Setup of Buckets</a><ul>
+<li><a class="reference internal" href="#instructions-in-lens3-repository">Instructions in Lens3 Repository</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#accessing-buckets-by-aws-cli">Accessing Buckets by AWS CLI</a><ul>
 <li><a class="reference internal" href="#aws-cli-installation">AWS CLI Installation</a></li>
 <li><a class="reference internal" href="#listing-files">Listing files</a></li>
@@ -155,6 +178,8 @@ immediately for newly registered users.</p>
 <li><a class="reference internal" href="#downloading-files">Downloading files</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#software-components">Software Components</a></li>
+<li><a class="reference internal" href="#notes">Notes</a></li>
 </ul>
 </li>
 </ul>

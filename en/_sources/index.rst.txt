@@ -44,6 +44,9 @@ create buckets in it.
 Quick Setup of Buckets
 ======================
 
+Instructions in Lens3 Repository
+--------------------------------
+
 The Lens3's page in github.com has a good guide of the steps to create
 buckets.  Please refer to it.  Bucket names are global, that is,
 shared by all users.  Please avoid short commonplace names.
@@ -101,7 +104,19 @@ Or, try another command::
 
   aws --endpoint-url=https://lens3.fugaku.r-ccs.riken.jp s3 cp s3://some-bucket-name/sample.txt
 
-Compare the result.
+Software Components
+===================
+
+* MinIO: Popular AWS S3 Server
+
+  * https://min.io
+
+* Lens3: Multiplexer
+
+  * https://github.com/RIKEN-RCCS/lens3
+
+Notes
+=====
 
 .. note::
 
