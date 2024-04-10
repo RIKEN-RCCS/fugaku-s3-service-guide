@@ -43,7 +43,7 @@
 <p>This AWS S3 service on Fugaku allows users to import/export files in
 Fugaku’s filesystem.  An S3 server will be started as a user’s process
 when configured buckets are accessed.  It is user’s responsibility to
-setup buckets as well as to keep the secret keys secure.</p>
+setup buckets and contents as well as to keep the secret keys secure.</p>
 <p>This user guide describes simple usage of the S3 service on Fugaku.
 For questions, asking in <em>Zendesk Community</em> is a quicker way to
 contact maintainers of the service.</p>
@@ -52,10 +52,10 @@ contact maintainers of the service.</p>
 <section id="an-overview-of-the-service">
 <h2>An Overview of the Service<a class="headerlink" href="#an-overview-of-the-service" title="Link to this heading">¶</a></h2>
 <img alt="_images/lens3-overview.png" src="_images/lens3-overview.png" />
-<p>Lens3 service does not provide buckets operations, such as listing or
-creating buckets.  A bucket creation is naturally prohibited because
-Lens3 software distributes access requests with regard to a bucket
-accessed.</p>
+<p>This service, Lens3 service does not provide buckets operations, such
+as listing or creating buckets.  A bucket creation is naturally
+prohibited because Lens3 software distributes access requests with
+regard to a bucket accessed.</p>
 <p>Thus, it is necessary to create buckets, first.  The Web-UI is used to
 create buckets.  In Lens3’s terminology, a <em>pool</em> refers to a folder
 in the filesystem where buckets are created.  Create a pool, then
