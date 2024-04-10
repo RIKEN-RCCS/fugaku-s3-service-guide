@@ -24,13 +24,13 @@ contact maintainers of the service.
 An Overview of the Service
 ==========================
 
-.. image:: lens3-overview.png
-
 This service, Lenticularis-S3 (Lens3), consists of two open-source
 software, Lens3 + MinIO.  MinIO is a popular S3 server.  MinIO
 instances run as user's processes.  Lens3 is a multiplexer for MinIO
 instances and provides a single access point for them.  Lens3 forwards
 file access requests to MinIO with regard to bucket's owner.
+
+.. image:: lens3-overview.png
 
 Lens3 does not provide buckets operations, such as listing or creating
 buckets.  A bucket creation is naturally prohibited because Lens3
